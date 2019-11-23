@@ -1,0 +1,204 @@
+@import url("color.css");
+
+html {
+  	overflow: hidden;
+}
+html,body{
+	height: 100%;
+}
+body{
+	font-family: 'Raleway', sans-serif;
+	background-color: var(--dark);
+	min-height: 100vh;
+	transition: 1000ms;
+
+	perspective: 1px; 
+	transform-style: preserve-3d;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin: 0;
+  padding: 0;
+}
+header{
+	background-color: var(--dark);
+	color: var(--light);
+}
+.switch label .lever{
+	background-color: rgb(91, 91, 91);
+}
+a{
+	text-decoration: none !important;
+}
+a.btn:hover{
+	color: inherit;
+}
+.dropdown-content{
+	width: unset !important;
+	height: unset !important;
+}
+.navig a{
+	position: relative;
+	transition: 250ms;
+	color: var(--light);
+	vertical-align: sub;
+	cursor: pointer;
+}
+.navig a::after{
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 49%;
+	width: 2px;
+	transition: 250ms;
+	height: 2px;
+	background-color: var(--light-red);
+}
+.navig a:hover::after{
+	width: 100%;
+	left: 0;
+	height: 1px;
+}
+.navig a:hover{
+	color: var(--light-red);
+}
+#lang-switcher{
+	background-color: var(--light-red)
+}
+.dropdown-content li>a, .dropdown-content li>span{
+	font-size: 1rem;
+}
+.switch label input[type=checkbox]:checked+.lever{
+	background-color: #6b5164;
+}
+.switch label input[type=checkbox]:checked+.lever:after{
+	background-color: #d45d76;
+}
+.btn, .btn-large, .btn-small, .btn-flat{
+	text-transform: none;
+}
+.btn i, .btn-large i, .btn-small i, .btn-floating i, .btn-large i, .btn-small i, .btn-flat i{
+	font-size: 1rem;
+}
+#logo{
+	background-image: url(../img/logo.png);
+	background-size: contain;
+	width: 160px; 
+	height: 28px;
+	background-repeat: no-repeat;
+}
+#about_me_block ul>li>a>i{
+	color: var(--light-red);
+	font-size: 3rem;
+	padding: 1rem;
+	transition: 250ms;
+}
+#about_me_block ul>li>a>i:hover{
+	color: white;
+}
+#about_me_block {
+	color: var(--light);
+}
+.mcard{
+	background-color: var(--light-dark);
+	transition: 250ms;
+	margin: 2px 1em;
+	color: var(--light)
+}
+.mcard>img{
+	height: 180px;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+.mcard:hover{
+	transform: scale(1.01);
+}
+.mcard a.btn{
+	background-color: var(--light-red)
+}
+.mcard h4{
+	font-size: 1.5rem;
+	font-weight: bold
+}
+.mbadge{
+	background-color: #68697d;
+	display: inline-block;
+	padding: 3px 7px;
+	font-size: 0.8rem;
+	border-radius: 4px;
+	margin: 2px 1px;
+	color: var(--white);
+}
+#cover{
+	width: 100%;
+	height: 25vh;
+	background-image: url(../img/cosmos.png);
+	background-attachment: fixed;
+	background-size: contain;
+}
+div.slick-list.draggable{
+	padding: 2rem 0 !important
+}
+.slick-prev:before,
+.slick-next:before{
+	z-index: 999;
+	color: var(--light-red)
+}
+.slick-dots li.slick-active button:before{
+	color: var(--light-red)
+}
+.slick-dots li button:before{
+	color: #ab3573
+}
+.container-fluid>h5{
+	color: var(--light)
+}
+a.btn{
+	background-color: var(--light-red)
+}
+
+.mparallax {
+	box-sizing: border-box;
+	min-height: 100vh;
+	width: 100vw;
+}
+.mparallax::before{
+	content: '';
+    display: block;
+    position: absolute;
+    left: -8px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    transform-origin: bottom;
+    height: 100vh;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateZ(-2px) scale(3) translateY(350px);
+}
+#skills_block ul>li i{
+	color: var(--light-red);
+}
+#skills_block ul>li {
+	color: var(--white);
+}
+::selection{
+	background-color: var(--light-red);
+	color: white;
+}
+@media (max-width: 768px){
+	.list-horizontal-sm{
+		position: relative;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -ms-flex-pack: justify;
+	    justify-content: space-between;
+	    padding: .5rem 1rem;
+	}
+}
