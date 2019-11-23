@@ -1,0 +1,154 @@
+@import url("color.css");
+
+body{
+	font-family: 'Raleway', sans-serif;
+	background-color: var(--light);
+	min-height: 100vh;
+	transition: 1000ms;
+}
+header{
+	color: var(--dark);
+	background-color: var(--white);
+	transition: inherit;
+}
+#logo{
+	background-image: url(../img/logo_dark.png);
+	background-size: contain;
+	width: 160px; height: 28px;
+	background-repeat: no-repeat;
+}
+.switch label .lever{
+	background-color: rgb(212, 212, 212) !important;
+}
+a{
+	text-decoration: none !important;
+}
+a.btn:hover{
+	color: inherit;
+}
+.dropdown-content{
+	width: unset !important;
+	height: unset !important;
+}
+.navig a{
+	position: relative;
+	transition: 250ms;
+	color: var(--dark);
+	vertical-align: sub;
+	cursor: pointer;
+}
+.navig a::after{
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 49%;
+	width: 2px;
+	transition: 250ms;
+	height: 2px;
+	background-color: var(--blue);
+}
+.navig a:hover::after{
+	width: 100%;
+	left: 0;
+	height: 1px;
+}
+.navig a:hover{
+	color: var(--blue);
+}
+#lang-switcher{
+	background-color: var(--blue)
+}
+.dropdown-content li>a, .dropdown-content li>span{
+	font-size: 1rem;
+}
+.switch label .lever:after{
+	background-color: var(--blue) !important
+}
+.btn, .btn-large, .btn-small, .btn-flat{
+	text-transform: none;
+}
+.btn i, .btn-large i, .btn-small i, .btn-floating i, .btn-large i, .btn-small i, .btn-flat i{
+	font-size: 1rem;
+}
+#about_me_block ul>li>a>i{
+	color: var(--gray);
+	font-size: 3rem;
+	padding: 1rem;
+	transition: 250ms;
+}
+#about_me_block ul>li>a>i:hover{
+	color: var(--dark);
+}
+.mcard{
+	background-color: var(--white);
+	transition: 250ms;
+	margin: 2px 1em;
+}
+.mcard>img{
+	height: 180px;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+.mcard:hover{
+	transform: scale(1.01);
+}
+.mcard a.btn{
+	background-color: var(--blue);
+	color: white;
+}
+.mcard h4{
+	font-size: 1.5rem;
+	font-weight: bold
+}
+.mbadge{
+	background-color: #a8b5c3;
+	display: inline-block;
+	padding: 3px 7px;
+	font-size: 0.8rem;
+	border-radius: 4px;
+	margin: 2px 1px;
+	color: var(--white);
+}
+#cover{
+	display: none;
+}
+div.slick-list.draggable{
+	padding: 2rem 0 !important
+}
+.slick-prev:before,
+.slick-next:before{
+	z-index: 999;
+	color: var(--blue)
+}
+#about_me_block{
+	background-color: var(--white)
+}
+#skills_block{
+	background-color: var(--white);
+	border-top: 1px #dadada  solid;
+}
+#skills_block ul>li i{
+	color: var(--teal);
+}
+#skills_block ul>li {
+	color: var(--dark);
+}
+::selection{
+	background-color: var(--teal);
+	color: white;
+}
+@media (max-width: 768px){
+	.list-horizontal-sm{
+		position: relative;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -ms-flex-pack: justify;
+	    justify-content: space-between;
+	    padding: .5rem 1rem;
+	}
+}
